@@ -1,0 +1,14 @@
+@import './../../../variables';
+
+.accept-cookies {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 140px;
+    width: 100%;
+    background-color: $black;
+    font-size: 2rem;
+    color: $purple;
+    z-index: 999;
+    padding: 1rem;
+}

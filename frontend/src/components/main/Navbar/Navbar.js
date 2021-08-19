@@ -1,22 +1,17 @@
-import NavLinks from './NavLinks'
 import NavLogo from './NavLogo'
+import NavLinks from './NavLinks'
 import NavHeading from './NavHeading'
 import HamburgerMenu from './HamburgerMenu'
 import styled from 'styled-components'
 import './index.scss'
 
-const NavLogoWrapper = styled.div`
-    display: flex;
-    align-items: center;
-`
-
 const Navbar = () => {
     return (
         <nav className='nav' data-testid='navbar'>
-            <NavLogoWrapper>
+            <NavWrapper>
                 <NavLogo />
                 <NavHeading text='Madi-S' />
-            </NavLogoWrapper>
+            </NavWrapper>
 
             <div className='nav__links-wrapper'>
                 <NavLinks />
@@ -26,5 +21,10 @@ const Navbar = () => {
         </nav>
     )
 }
+
+const NavWrapper = styled.div`
+    display: flex;
+    align-items: center;
+`
 
 export default Navbar

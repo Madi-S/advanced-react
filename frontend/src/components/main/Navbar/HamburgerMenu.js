@@ -2,13 +2,6 @@ import NavLinks from './NavLinks'
 import { useRef } from 'react'
 import styled from 'styled-components'
 
-const NavMenuBar = styled.span`
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-`
-
 const HamburgerMenu = () => {
     const navMenuRef = useRef()
     const navMenuToggleRef = useRef()
@@ -47,5 +40,12 @@ const HamburgerMenu = () => {
         </>
     )
 }
+
+const NavMenuBar = styled.span`
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+`
 
 export default HamburgerMenu
