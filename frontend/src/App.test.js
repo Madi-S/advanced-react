@@ -2,6 +2,11 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from './App'
 
+const DEFAULT_WIDTH = 1920
+const DEFAULT_HEIGHT = 860
+const MOBILE_WIDTH = 600
+const MOBILE_HEIGHT = 720
+
 let component
 let getByRole
 let getAllByRole
@@ -42,23 +47,23 @@ test('Should have footer', () => {
 })
 
 test('Should render navbar with 5 clickable buttons: "about me", "feedback", "courses","login", "register"', () => {
-    const aboutMeBtn = getByText(/about me/i)
+    const [aboutMeBtn, _aboutMeBtn] = getAllByText(/about me/i)
     expect(aboutMeBtn).toBeVisible()
     expect(aboutMeBtn).toBeDisabled()
 
-    const feedbackBtn = getByText(/feedback/i)
+    const [feedbackBtn, _feedbackBtn] = getAllByText(/feedback/i)
     expect(feedbackBtn).toBeVisible()
     expect(feedbackBtn).not.toBeDisabled()
 
-    const loginBtn = getByText(/login/i)
+    const [loginBtn, _loginBtn] = getAllByText(/login/i)
     expect(loginBtn).toBeVisible()
     expect(loginBtn).not.toBeDisabled()
 
-    const registerBtn = getByText(/register/i)
+    const [registerBtn, _registerBtn] = getAllByText(/register/i)
     expect(registerBtn).toBeVisible()
     expect(registerBtn).not.toBeDisabled()
 
-    const coursesBtn = getByText(/courses/i)
+    const [coursesBtn, _coursesBtn] = getAllByText(/courses/i)
     expect(coursesBtn).toBeVisible()
     expect(coursesBtn).not.toBeDisabled()
 })

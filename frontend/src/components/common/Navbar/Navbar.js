@@ -1,16 +1,13 @@
-import NavLink from './NavLink'
+import NavLinks from './NavLinks'
 import NavLogo from './NavLogo'
 import NavHeading from './NavHeading'
-import './index.scss'
+import HamburgerMenu from './HamburgerMenu'
 import styled from 'styled-components'
+import './index.scss'
 
 const NavLogoWrapper = styled.div`
     display: flex;
     align-items: center;
-`
-
-const NavLinksWrapper = styled.div`
-
 `
 
 const Navbar = () => {
@@ -21,13 +18,11 @@ const Navbar = () => {
                 <NavHeading text='Madi-S' />
             </NavLogoWrapper>
 
-            <NavLinksWrapper>
-                <NavLink text='About me' to='about-me' />
-                <NavLink text='Feedback' to='feedback' />
-                <NavLink text='Courses' to='courses' />
-                <NavLink text='Login' to='login' />
-                <NavLink text='Register' to='register' />
-            </NavLinksWrapper>
+            <div className='nav__links-wrapper'>
+                <NavLinks />
+            </div>
+
+            <HamburgerMenu />
         </nav>
     )
 }

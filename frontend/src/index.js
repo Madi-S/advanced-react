@@ -13,7 +13,7 @@ import rootReducer from './redux/reducers/rootReducer'
 import { forbiddenWordsMiddleware } from './redux/middleware'
 
 const token = jwt.sign({ foo: 'bar' }, 'shhhhh')
-console.log(token)
+// console.log(token)
 
 // const composeEnhancer = (window.__REDUX_DEVTOOLS_EXTENSION__ &&
 // window.__REDUX_DEVTOOLS_EXTENSION__()) || compose

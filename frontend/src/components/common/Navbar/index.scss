@@ -46,8 +46,35 @@ $navbar-height: 80px;
     margin: 0 10px;
 }
 
-@media only screen and (max-width: 600px) {
-    .nav__links-mobile {
-        display: block 
+.nav__menu-toggle {
+    position: absolute;
+    top: $navbar-height - 50px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.nav__menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: $light-black;
+}
+
+@media (max-width: 800px) {
+    .nav__menu-toggle {
+        display: flex;
+    }
+
+    .nav__links-wrapper {
+        display: none;
     }
 }
