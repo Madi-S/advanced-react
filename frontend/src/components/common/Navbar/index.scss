@@ -46,7 +46,8 @@ $navbar-height: 80px;
     margin: 0 10px;
 }
 
-.nav__logo-wrapper {
-    display: flex;
-    align-items: center;
+@media only screen and (max-width: 600px) {
+    .nav__links-mobile {
+        display: block 
+    }
 }
