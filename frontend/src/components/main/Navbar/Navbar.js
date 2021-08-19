@@ -13,9 +13,9 @@ const Navbar = () => {
                 <NavHeading text='Madi-S' />
             </NavWrapper>
 
-            <div className='nav__links-wrapper'>
+            <NavWrapper className='nav__links-wrapper'>
                 <NavLinks />
-            </div>
+            </NavWrapper>
 
             <HamburgerMenu />
         </nav>

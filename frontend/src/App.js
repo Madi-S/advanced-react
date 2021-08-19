@@ -7,10 +7,10 @@ import './index.scss'
 function App() {
     return (
         <div className='app'>
-            <AcceptCookies />
             <Navbar />
             <main data-testid='main'>Main</main>
             <Footer />
+            <AcceptCookies />
         </div>
     )
 }

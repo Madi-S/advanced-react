@@ -1,11 +1,6 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import App from './App'
-
-const DEFAULT_WIDTH = 1920
-const DEFAULT_HEIGHT = 860
-const MOBILE_WIDTH = 600
-const MOBILE_HEIGHT = 720
 
 let component
 let getByRole
@@ -46,7 +41,7 @@ test('Should have footer', () => {
     expect(footer).toBeVisible()
 })
 
-test('Should render navbar with 5 clickable buttons: "about me", "feedback", "courses","login", "register"', () => {
+test('Should render navbar with 5 clickable buttons: "about me", "feedback", "courses","login", "register" and other 5 hidden exact buttons for mobile access', () => {
     const [aboutMeBtn, _aboutMeBtn] = getAllByText(/about me/i)
     expect(aboutMeBtn).toBeVisible()
     expect(aboutMeBtn).toBeDisabled()
@@ -78,4 +73,12 @@ test('Should render navbar with heading', () => {
     const heading = getByText(/Madi-S/i)
 
     expect(heading).toBeVisible()
+})
+
+test('Should display "accept cookies" window and hide once clicked on accept button', () => {
+    const cookiesWindow = getByTestId('accept-cookies')
+    const acceptBtn = cookiesWindow.querySelector('button')
+    
+    expect(cookiesWindow).toBeVisible()
+    expect(acceptBtn).toBeVisible()
 })
