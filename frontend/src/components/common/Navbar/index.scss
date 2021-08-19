@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import './../../../variables';
+
+$navbar-height: 80px;
+
+.nav {
+    width: 100%;
+    height: $navbar-height;
+    background-color: $black;
+    border-bottom: 1px solid $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__header {
+    color: $light-gray;
+}
+
+.nav__link {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+    color: $dark-gray;
+    border: none;
+    background-color: inherit;
+    padding: 0.6rem;
+    min-width: 60px;
+    margin: 20px;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $white;
+        cursor: pointer;
+    }
+
+    &-active {
+        color: $white !important;
+    }
+}
+
+.nav__logo {
+    height: $navbar-height - 5px;
+    width: auto;
+    margin: 0 10px;
+}
+
+.nav__logo-wrapper {
+    display: flex;
+    align-items: center;
+}
