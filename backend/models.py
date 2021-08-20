@@ -10,6 +10,7 @@ class User(Base):
     last_name = Column(String)
     age = Column(Integer)
 
+
 '''
 For migrations:
 
