@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import App from './App'
+import Footer from './Footer'
 
 let component
 let getByRole
@@ -13,7 +13,7 @@ let getByAltText
 let getAllByAltText
 
 beforeEach(() => {
-    component = render(<Navbar />)
+    component = render(<Footer />)
     getByRole = component.getByRole
     getAllByRole = component.getAllByRole
     getByText = component.getByText
@@ -26,25 +26,25 @@ beforeEach(() => {
 
 afterEach(() => {})
 
-test('Should render navbar', () => {
-    const navbar = getByTestId('navbar')
-    expect(navbar).toBeVisible()
-})
-
-test('Should render main', () => {
-    const main = getByTestId('main')
-    expect(main).toBeVisible()
-})
-
 test('Should render footer', () => {
     const footer = getByTestId('footer')
     expect(footer).toBeVisible()
 })
 
-test('Should display "accept cookies" window and hide once clicked on accept button', () => {
-    const cookiesWindow = getByTestId('accept-cookies')
-    const acceptBtn = cookiesWindow.querySelector('button')
-    
-    expect(cookiesWindow).toBeVisible()
-    expect(acceptBtn).toBeVisible()
+test('Should render social media links: vk, gmail, github', () => {
+    const footer = getByTestId('footer')
+
+    const vkLink = footer.getElementById('vk')
+    const gmailLInk = footer.getElementById('gmail')
+    const githubLink = footer.getElementById('github')
+
+    vkLink.toBeVisible()
+    gmailLInk.toBeVisible()
+    githubLink.toBeVisible()
+})
+
+test('Should render copyright info', () => {
+    const copyrightInfo = getByText(/Copyright © 2021/i)
+
+    copyrightInfo.toBeVisible()
 })

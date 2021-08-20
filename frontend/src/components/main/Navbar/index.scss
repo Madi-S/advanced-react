@@ -68,10 +68,10 @@ $navbar-height: 80px;
 
 @media (max-width: 800px) {
     .nav__menu-toggle {
-        display: flex;
+        display: flex !important;
     }
 
     .nav__links-wrapper {
-        display: none;
+        display: none !important;
     }
 }

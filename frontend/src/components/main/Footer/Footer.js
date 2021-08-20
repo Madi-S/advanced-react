@@ -1,9 +1,13 @@
 import './index.scss'
+import SocialMediaLinks from './SocialMediaLinks'
+import CopyrightBlock from './CopyrightBlock'
 
 const Footer = () => {
     return (
         <footer data-testid='footer' className='footer'>
-            Footer
+            <SocialMediaLinks />
+            <hr />
+            <CopyrightBlock />
         </footer>
     )
 }

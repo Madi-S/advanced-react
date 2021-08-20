@@ -1,10 +1,19 @@
 @import './../../../variables';
 
-$footer-height: 200px;
+$footer-height: 100px;
 
 .footer {
     height: $footer-height;
     width: 100%;
     background-color: $black;
     color: $white;
+}
+
+.footer__icon {
+    margin: 10px 13px;
+}
+
+.footer__copyright {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    margin: 10px;
 }
