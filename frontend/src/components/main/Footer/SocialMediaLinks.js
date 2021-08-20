@@ -11,17 +11,17 @@ const SocialMediaLinks = () => {
                 <SocialMediaLink
                     Icon={FaGithub}
                     href='https://github.com/Madi-S'
-                    title='github'
+                    title='github-link'
                 />
                 <SocialMediaLink
                     Icon={FaFacebook}
                     href='https://facebook.com/'
-                    title='facebook'
+                    title='facebook-link'
                 />
                 <SocialMediaLink
                     Icon={ImMail4}
                     href='mailto:khovansky99@gmail.com'
-                    title='gmail'
+                    title='gmail-link'
                 />
             </IconsWrapper>
         </div>
