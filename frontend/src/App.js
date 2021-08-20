@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Footer from './components/main/Footer/Footer'
 import Navbar from './components/main/Navbar/Navbar'
 import AcceptCookies from './components/common/AcceptCookies/AcceptCookies'
-import IndexPage from './pages/IndexPage'
-import LoginPage from './pages/LoginPage'
-import RegisterPage from './pages/RegisterPage'
-import FeedbackPage from './pages/FeedbackPage'
-import CoursesPage from './pages/CoursesPage'
+import {
+    IndexPage,
+    FeedbackPage,
+    CoursesPage,
+    LoginPage,
+    RegisterPage
+} from './pages'
 
 import './index.scss'
 
