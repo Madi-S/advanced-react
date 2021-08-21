@@ -19,8 +19,11 @@ const HamburgerMenu = () => {
     }
 
     const toggleMenu = () => {
-        if (shouldHideNavMenu()) hideNavMenu()
-        else showNavMenu()
+        if (shouldHideNavMenu()) {
+            hideNavMenu()
+        } else {
+            showNavMenu()
+        }
     }
 
     return (

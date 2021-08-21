@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import './index.scss'
+import Button from '../Button/Button'
 
 const AcceptCookies = () => {
     const elRef = useRef()
@@ -26,7 +27,11 @@ const AcceptCookies = () => {
         >
             By continuing to use this website, you consent to the use of cookies
             in accordance with our Cookie Policy.
-            <button onClick={close}>Ok</button>
+            <Button
+                styles={{ margin: '10px' }}
+                onClick={close}
+                text='Ok'
+            />
         </motion.div>
     )
 }

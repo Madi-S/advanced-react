@@ -9,7 +9,7 @@ const BackgroundVideo = props => {
         minWidth: '100%',
         minHeight: '100%',
         zIndex: -1,
-        filter: 'brightness(45%)'
+        filter: 'brightness(45%)',
     }
 
     return (
@@ -33,6 +33,7 @@ const BackgroundVideo = props => {
 const Wrapper = styled.div`
     width: 100%;
     height: ${WRAPPER_HEIGHT_PX}px;
+    
 `
 
 const VideoWrapper = styled.div`
