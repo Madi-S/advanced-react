@@ -17,6 +17,7 @@
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    min-width: 120px;
 
     &:after {
         content: '';
@@ -41,7 +42,7 @@
         }
     }
 
-    &.btn-purple {
+    &.btn-info {
         background: $purple;
         color: $black;
 
@@ -51,7 +52,7 @@
         }
     }
 
-    &.btn-pink {
+    &.btn-danger {
         background: $pink;
         color: $black;
 
@@ -61,7 +62,7 @@
         }
     }
 
-    &.btn-blue {
+    &.btn-primary {
         background: $blue;
         color: $white;
 

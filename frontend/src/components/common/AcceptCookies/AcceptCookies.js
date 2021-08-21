@@ -31,6 +31,7 @@ const AcceptCookies = () => {
                 styles={{ margin: '10px' }}
                 onClick={close}
                 text='Ok'
+                type='info'
             />
         </motion.div>
     )

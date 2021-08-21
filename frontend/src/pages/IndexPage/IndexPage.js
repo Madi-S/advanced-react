@@ -13,7 +13,7 @@ const IndexPage = () => {
 }
 
 const TypingEffect = styled.div`
-    color: #e201d9;
+    color: #8808ff;
     width: 21ch;
     animation: typing 3.2s steps(24), blink 0.5s step-end infinite alternate;
     white-space: nowrap;

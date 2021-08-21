@@ -2,12 +2,12 @@ import './index.scss'
 
 const Button = ({
     styles,
-    text,
-    color = 'purple',
+    text = 'OK',
+    type = 'info',
     onClick = () => {}
 }) => {
     return (
-        <button className={`btn btn-${color}`} style={styles} onClick={onClick}>
+        <button className={`btn btn-${type}`} style={styles} onClick={onClick}>
             {text}
         </button>
     )
