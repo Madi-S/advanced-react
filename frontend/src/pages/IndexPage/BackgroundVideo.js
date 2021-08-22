@@ -6,7 +6,7 @@ const BackgroundVideo = props => {
         <Wrapper>
             <video
                 style={{
-                    width: '100vw',
+                    width: '100%',
                     height: '85vh',
                     margin: '0',
                     padding: '0',
@@ -25,7 +25,7 @@ const BackgroundVideo = props => {
 }
 
 const Wrapper = styled.div`
-    width: 100vh;
+    width: 100%;
     height: 85vh;
 `
 
@@ -33,7 +33,7 @@ const ContentWrapper = styled.div`
     position: absolute;
     left: 0;
     right: 0;
-    top: 570px;
+    top: 370px;
     text-align: center;
     display: flex;
     align-items: center;
