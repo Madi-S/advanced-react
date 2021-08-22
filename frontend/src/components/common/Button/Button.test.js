@@ -2,7 +2,7 @@ import { fireEvent, render, screen, waitFor, fn } from '@testing-library/react'
 import Button from './Button'
 
 test('Should render button with no props', () => {
-    const component = render(<Button />)
+    render(<Button />)
 
     const button = document.querySelector('button')
     expect(button).not.toBeNull()
@@ -13,7 +13,7 @@ test('Should render button with no props', () => {
 test('Should render button with specified props', () => {
     const mockCallback = jest.fn()
 
-    const component = render(
+    render(
         <Button
             styles={{ margin: '10px' }}
             type='danger'

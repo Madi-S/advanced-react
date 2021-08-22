@@ -40,14 +40,6 @@
 
 ## Sockets
 
-# Website schema:
-
-## Navbar on the top (with buttons for all main routes)
-
-## Basic footer on all pages with contact info, all rights reserved info
-
-## Routes: /, /feedback, /register, /login, /logout, /profile, /courses, /courses/python etc
-
 ## Index page: main content (scrollable) - showing my portfolio: skills, knowledge, about me, contacts, github repos etc. Also add overlay video somewhere
 
 ## Feedback route allows registered users to write feedback for me, however, anyone can view it: content page will look like: commentaries on the right (scrollable), my avatar and small info on the left (unscrollable)

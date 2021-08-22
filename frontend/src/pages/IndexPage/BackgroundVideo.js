@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Video from './../../video/coding.mp4'
+import Video from './../../misc/video/coding.mp4'
 
 const WRAPPER_HEIGHT_PX = 600
 const CONTENT_WRAPPER_TOP_PX = WRAPPER_HEIGHT_PX - 370
